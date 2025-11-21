@@ -18,7 +18,7 @@ Current research on noisy correspondence often uses a simple whole-text swapping
 
 ---
 #### Overall framework
-![avatar](./img/主图.png)
+![avatar](./img/1.png)
 
 ---
 # usage

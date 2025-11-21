@@ -1,18 +1,20 @@
 # Learning Structure-Consistent Alignment under Fine-Grained Noisy Correspondences for Text-Based Person Retrieval
 
+## Introduction
+Current research on noisy correspondence often uses a simple whole-text swapping method, where the entire text description of one pedestrian is swapped with another's image. This approach, while easy to implement, has significant limitations. It creates noise that is too extreme and does not reflect real-world annotation errors, which are typically local and semantic (e.g., color or clothing mistakes). Whole-text swapping results in completely mismatched identity-level descriptions, which is more severe than common annotation biases. Additionally, it disrupts fine-grained semantic associations necessary for precise cross-modal alignment, leading to models that rely too heavily on identity cues and fail to handle partial text corruption effectively. Therefore, developing datasets with more realistic, fine-grained noise is crucial.
 
 #### The fine-grained noisy datasets we constructed, covering multiple noise ratios, have been publicly released to support the research community. The data can be accessed via the following links:
 
-##### CUHK-PEDES(Fine-Grained Noisy Dataset)
-https://drive.google.com/drive/folders/110joLizRgsJWO6IYxvpm6DGJy1kxwdpC?usp=sharing
+##### CUHK-PEDES (Fine-Grained Noisy Dataset) 
+[Click here](https://drive.google.com/drive/folders/110joLizRgsJWO6IYxvpm6DGJy1kxwdpC?usp=sharing)
 
 ---
-##### ICFG-PEDES(Fine-Grained Noisy Dataset)
-https://drive.google.com/drive/folders/1arQH2dtyl5SPzoyW1_9hV3ORGKFUdTJJ?usp=sharing
+##### ICFG-PEDES (Fine-Grained Noisy Dataset)
+[Click here](https://drive.google.com/drive/folders/1arQH2dtyl5SPzoyW1_9hV3ORGKFUdTJJ?usp=sharing)
 
 ---
-##### RSTPReid(Fine-Grained Noisy Dataset)
-https://drive.google.com/drive/folders/1pgZN4eIKkmVNhEvVqEGrWSVEGbRbrUBx?usp=sharing
+##### RSTPReid (Fine-Grained Noisy Dataset)
+[Click here](https://drive.google.com/drive/folders/1pgZN4eIKkmVNhEvVqEGrWSVEGbRbrUBx?usp=sharing)
 
 ---
 #### Overall framework
@@ -48,7 +50,7 @@ easydict
 |    |-- imgs
 |    |-- RSTPReid.json
 ```
-# Training and Evaluation
+## Training and Evaluation
 ---
 ## Training
 ```
@@ -59,6 +61,9 @@ sh run.sh
 python test.py
 ```
 ---
+
+#### Our training logs are published [here](https://drive.google.com/drive/folders/13reB914CEcmh3k1aB77hnlr5eYSm613Q?usp=sharing)
+
 We conducted comprehensive performance evaluations on four baseline models using our **fine-grained noisy datasets** under varying noise ratios.
 | Noise   | Method | **CUHK-PEDES**                          |                             |                             |            |            | **ICFG-PEDES**                          |                             |                             |            |            | **RSTPReid**                            |                             |                             |            |            |
 |---------|--------|-----------------------------------------|-----------------------------|-----------------------------|------------|------------|-----------------------------------------|-----------------------------|-----------------------------|------------|------------|-----------------------------------------|-----------------------------|-----------------------------|------------|------------|
